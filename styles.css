@@ -99,3 +99,224 @@ body.body-bg {
     display: none;
   }
 }
+
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  margin-top: 1.25rem;
+  padding: 0 1rem;
+  height: auto;
+}
+@media (min-width: 1200px) {
+  .hero-section {
+    margin-top: 9.5rem;
+    padding: 0 11rem;
+  }
+}
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1.25rem;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .hero-container {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+.hero-content {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .hero-content {
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+.hero-title {
+  font-family: "Noto-sarif", serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.5s;
+}
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+.hero-title-highlight {
+  color: var(--orange);
+  font-family: "Noto-sarif", serif;
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .hero-title-highlight {
+    font-size: 3rem;
+  }
+}
+.hero-title:hover {
+  transform: scale(1.05);
+}
+.hero-description {
+  opacity: 0.5;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.625;
+}
+.hero-image-container {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .hero-image-container {
+    width: 50%;
+  }
+}
+.hero-image {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+/* Product Section */
+.product-section {
+  width: 100%;
+  padding: 0 1rem;
+  margin-top: 1.25rem;
+}
+@media (min-width: 1200px) {
+  .product-section {
+    padding: 0 10rem;
+    margin-top: 7.5rem;
+  }
+}
+.product-section-inner {
+  width: 100%;
+}
+.product-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.product-title {
+  font-size: 1.25rem;
+  font-family: "Noto-sarif", serif;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 768px) {
+  .product-title {
+    font-size: 2.25rem;
+  }
+}
+.product-title-highlight {
+  color: var(--orange);
+}
+.product-description {
+  opacity: 0.5;
+  font-size: 0.875rem;
+  max-width: var(--container-xl);
+  margin-bottom: 0.5rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 1.5rem;
+  }
+}
+.product-card {
+  width: 100%;
+  background: none;
+  border-radius: var(--radius-md);
+  padding: 0.5rem;
+  box-shadow: none;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+@media (min-width: 640px) {
+  .product-card {
+    padding: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .product-card {
+    padding: 1.5rem;
+  }
+}
+.product-card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: scale(1.05);
+}
+.product-card-inner {
+  text-align: center;
+}
+.product-image {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+@media (min-width: 640px) {
+  .product-image {
+    height: 13rem;
+  }
+}
+@media (min-width: 768px) {
+  .product-image {
+    height: 14rem;
+  }
+}
+.product-name {
+  font-size: 1rem;
+  font-family: "Noto-sarif", serif;
+}
+@media (min-width: 640px) {
+  .product-name {
+    font-size: 1.125rem;
+  }
+}
+.product-price {
+  font-size: 0.75rem;
+  font-family: "Noto-Sans", Arial, sans-serif;
+  font-weight: 800;
+}
+@media (min-width: 640px) {
+  .product-price {
+    font-size: 0.875rem;
+  }
+}
+.add-to-cart-btn {
+  width: 100%;
+  font-weight: bold;
+  font-family: "Noto-Sans", Arial, sans-serif;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--white);
+  background: var(--orange);
+  font-size: 0.75rem;
+  border: none;
+  border-radius: var(--radius-md);
+  transition: background 0.3s;
+  cursor: default;
+}
+@media (min-width: 640px) {
+  .add-to-cart-btn {
+    font-size: 0.875rem;
+  }
+}
+.add-to-cart-btn:hover {
+  background: #c94a06;
+}
